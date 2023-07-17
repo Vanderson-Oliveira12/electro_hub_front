@@ -1,0 +1,85 @@
+<header>
+  <div class="header-information flex flex-center">
+    <app-container class="header-information-container">
+      <div class="information-hours">Seg-Sáb: 9:00 AM - 5:30 PM</div>
+      <div class="information-local">
+        Nos localizamos na Rua Paraná, 556 - Sul américa
+      </div>
+      <div class="information-contact gap-2">
+        <div class="contact-content">Contate-nos: (00) 9090 9090</div>
+        <div class="contact-social gap-1">
+          <a role="button">
+            <img src="assets/svg/fb_icon.svg" alt="Icone Facebook">
+          </a>
+          <a role="button">
+            <img src="assets/svg/in_icon.svg" alt="Icone Instagram">
+          </a>
+        </div>
+      </div>
+    </app-container>
+  </div>
+  <nav class="header-nav flex flex-center">
+    <app-container class="header-nav-container">
+      <a class="logo" href="#" role="button">
+        <img src="assets/svg/logo.svg" alt="Logo Electro Hub" />
+      </a>
+      <div class="header-actions">
+        <ul class="header-links  flex flex-center gap-2" [class.shown-links]="!isShownNav">
+          <li>
+            <button>Notebooks</button>
+          </li>
+          <li>
+            <button>PC's</button>
+          </li>
+          <li>
+            <button>Celulares</button>
+          </li>
+          <li>
+            <button>Impressoras</button>
+          </li>
+          <li>
+            <button>Componentes</button>
+          </li>
+          <li>
+            <button>Outros</button>
+          </li>
+          <li>
+            <button>Reparos</button>
+          </li>
+          <li>
+            <button class="btn-offer">Ofertas</button>
+          </li>
+        </ul>
+        <div class="header-search-container flex flex-center" [class.shown-search]="isShownNav">
+          <input
+            placeholder="Pesquise por um produto da loja..."
+            class="header-search-input"
+            type="text"
+            name="search"
+            id="search"
+          />
+          <label for="search" class="flex flex-center">
+            <mat-icon>search</mat-icon>
+          </label>
+        </div>
+      </div>
+
+      <div class="header-user flex flex-center gap-4">
+        <button class="flex flex-center" type="button" (click)="handleNavAction()">
+          <mat-icon *ngIf="!isShownNav">search</mat-icon>
+          <mat-icon *ngIf="isShownNav">close</mat-icon>
+        </button>
+        <button class="user-cart flex flex-center" type="button">
+          <p class="user-cart-quantity">0</p>
+          <mat-icon>shopping_cart</mat-icon>
+        </button>
+        <button class="user-img" type="button">
+          <img
+            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
+            alt="Usuário Logado"
+          />
+        </button>
+      </div>
+    </app-container>
+  </nav>
+</header>
