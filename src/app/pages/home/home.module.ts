@@ -5,7 +5,6 @@ import { BannerComponent } from './banner/banner.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     SharedModule,
     HomeRoutingModule,
     NgbCarouselModule,
-    CarouselModule
+
   ]
 })
 export class HomeModule { }

@@ -1,0 +1,11 @@
+@use "../../../../sass/variables.scss";
+
+footer{
+  width: 100%;
+  background-color: variables.$footer-color;
+  color: #fff;
+}
+
+.footer-newsletter{
+  justify-content: space-between;
+}
