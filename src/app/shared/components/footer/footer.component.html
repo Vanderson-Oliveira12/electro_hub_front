@@ -1,14 +1,141 @@
 <footer>
   <app-container>
-    <div class="footer-newsletter flex ">
+    <div class="footer-newsletter flex flex-center">
       <div class="newsletter-content">
         <h2>Inscreva-se e receba as melhores promoções.</h2>
         <h3>Seja o primeiro a saber das últimas ofertas.</h3>
       </div>
-      <div class="newsletter-input">
-        <input type="text" name="email" id="email" />
+      <div class="newsletter-input flex flex-center gap-5">
+        <input
+          placeholder="Seu melhor E-mail..."
+          type="text"
+          name="email"
+          id="email"
+        />
         <input type="button" value="Se inscrever" />
       </div>
+    </div>
+    <div class="newsletter-links">
+      <div class="newsletter-link-item">
+        <p class="newsletter-link-title">Informação</p>
+        <ul>
+          <li>
+            <a href="#">Sobre nós</a>
+          </li>
+          <li>
+            <a href="#">Sobre CEP</a>
+          </li>
+          <li>
+            <a href="#">Política de Privacidade</a>
+          </li>
+          <li>
+            <a href="#">Procurar</a>
+          </li>
+          <li>
+            <a href="#">Termos</a>
+          </li>
+          <li>
+            <a href="#">Pedidos e Devoluções</a>
+          </li>
+          <li>
+            <a href="#">`Procurar</a>
+          </li>
+          <li>
+            <a href="#">Termos</a>
+          </li>
+          <li>
+            <a href="#">Contate-nos</a>
+          </li>
+          <li>
+            <a href="#">Busca Avançada</a>
+          </li>
+          <li>
+            <a href="#">Assinatura de Newsletter</a>
+          </li>
+        </ul>
+      </div>
+      <div class="newsletter-link-item">
+        <p class="newsletter-link-title">Desktop</p>
+        <ul>
+          <li>
+            <a href="#">CPU's</a>
+          </li>
+          <li>
+            <a href="#">Cartões Adicionais</a>
+          </li>
+          <li>
+            <a href="#">Discos Rígidos (Internos)</a>
+          </li>
+          <li>
+            <a href="#">Placas Gráficas</a>
+          </li>
+          <li>
+            <a href="#">Teclados / Mouses</a>
+          </li>
+          <li>
+            <a href="#">Gabinetes / Fontes de alimentação / Resfriamento</a>
+          </li>
+          <li>
+            <a href="#">Memória Ram</a>
+          </li>
+          <li>
+            <a href="#">Alto-falantes / Fones de Ouvido</a>
+          </li>
+          <li>
+            <a href="#">Placas-mão</a>
+          </li>
+        </ul>
+      </div>
+      <div class="newsletter-link-item">
+        <p class="newsletter-link-title">Outros</p>
+        <ul>
+          <li>
+            <a href="#">Servidores</a>
+          </li>
+          <li>
+            <a href="#">Netbooks</a>
+          </li>
+          <li>
+            <a href="#">Tablets e Ipads</a>
+          </li>
+          <li>
+            <a href="#">Placas Gráficas</a>
+          </li>
+          <li>
+            <a href="#">Cadeiras Gamer</a>
+          </li>
+        </ul>
+      </div>
+      <div class="newsletter-link-item">
+        <p class="newsletter-link-title">Outros</p>
+        <ul>
+          <li>Endereço: Rua 1234, Cidade, Estado, CEP 1234</li>
+          <li>Telefones: (00) 1234 5678</li>
+          <li>Horário de funcionamento:</li>
+          <li>Segunda-feira a quinta-feira: 9:00 às 17:30</li>
+          <li>Sexta-feira: 9:00 às 18:00</li>
+          <li>Sábado: 11:00 às 17:00</li>
+          <li>E-mail: shop@email.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copy flex flex-between">
+      <ul class="flex gap-4">
+        <li>
+          <a class="footer-social" role="button">
+            <img src="assets/svg/fb_icon.svg" alt="Icone Facebook" />
+          </a>
+        </li>
+        <li>
+          <a class="footer-social" role="button">
+            <img src="assets/svg/in_icon.svg" alt="Icone Instagram" />
+          </a>
+        </li>
+      </ul>
+      <div class="copy-credit-card flex gap-4">
+        <img src="assets/img/credit-card.png" alt="Aceitamos esses cartões" />
+      </div>
+      <p>Copyright © {{ getCurrentYear() }} Electro HUB. Ltd.</p>
     </div>
   </app-container>
 </footer>

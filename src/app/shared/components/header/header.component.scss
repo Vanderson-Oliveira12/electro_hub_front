@@ -9,7 +9,7 @@ header {
   align-items: center;
   flex-direction: column;
 
-  border-bottom: 1px solid #ACACAC;
+  border-bottom: 1px solid #acacac;
 }
 
 .header-information {
@@ -47,6 +47,7 @@ header {
   padding-top: 1.4rem;
 
   .header-links {
+    align-items: center;
     li {
       padding: 1rem;
       cursor: pointer;
@@ -62,12 +63,19 @@ header {
   }
 
   .header-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
 
     .user-img {
-      width: 3.6rem;
-      height: 3.6rem;
+      width: 4.2rem;
+      height: 4.2srem;
       border-radius: 50rem;
       overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .user-cart {
@@ -100,6 +108,7 @@ header {
 
 .header-actions {
   height: $height-nav;
+  position: relative;
   overflow-y: hidden;
 }
 
@@ -120,7 +129,7 @@ header {
 }
 
 .shown-search {
-  transform: translateY(-45px);
+  transform: translateY(-54px);
   pointer-events: all;
   transition: 0.5s ease;
 }
