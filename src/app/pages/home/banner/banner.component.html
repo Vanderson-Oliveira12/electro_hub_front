@@ -1,20 +1,19 @@
-<ngb-carousel *ngIf="banners"
-  [interval]="4000"
-  [showNavigationIndicators]="showNavigationIndicators"
->
-  <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <img [src]="banners[0]" alt="Random first slide" />
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <img [src]="banners[1]" alt="Random second slide" />
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <div class="picsum-img-wrapper">
-      <img [src]="banners[2]" alt="Random third slide" />
-    </div>
-  </ng-template>
-</ngb-carousel>
+<div class="banner-container">
+  <div class="banner-arrow-container">
+    <button (click)="previousSlideBanner()">
+      <mat-icon class="arrow">arrow_back_ios</mat-icon>
+    </button>
+    <button (click)="nextSlideBanner()">
+      <mat-icon class="arrow">arrow_forward_ios</mat-icon>
+    </button>
+  </div>
+  <div class="banner-item" [style.transform]="bannerIndex == 0 ? 'translateX(0%)' : ''">
+    <img [src]="banners[0]" />
+  </div>
+  <div class="banner-item" [style.transform]="bannerIndex == 1 ? 'translateX(-100%)' : ''">
+    <img [src]="banners[1]" />
+  </div>
+  <div class="banner-item" [style.transform]="bannerIndex == 2 ? 'translateX(-200%)' : ''">
+    <img [src]="banners[2]" />
+  </div>
+</div>
