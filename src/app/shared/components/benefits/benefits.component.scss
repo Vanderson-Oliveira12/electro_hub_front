@@ -1,0 +1,44 @@
+@use "../../../../sass/font.scss";
+@use "../../../../sass/variables.scss";
+
+.benefit-container {
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+  gap: 12rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 26.5rem;
+}
+
+.benefit-container-icon {
+  height: 6.5rem;
+  width: 6.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: variables.$primary-color;
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: #fff;
+  }
+}
+
+.benefit-item-title {
+  padding-top: 1.6rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+.benefit-item-text {
+  font-size: font.$medium;
+  color: #4d4d4d;
+}

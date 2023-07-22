@@ -1,6 +1,8 @@
 .product-line-container{
   width: 100%;
+  gap: 1.8rem;
   display: flex;
-  gap: 2.2rem;
+  align-items: center;
+  justify-content: flex-start;
   overflow-x: scroll;
 }

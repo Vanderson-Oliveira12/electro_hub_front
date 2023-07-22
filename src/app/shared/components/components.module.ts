@@ -5,12 +5,14 @@ import { ContainerComponent } from "./container/container.component";
 import { MaterialModule } from "../material/material.module";
 import { FooterComponent } from "./footer/footer.component";
 import { ProductCardComponent } from './product-card/product-card.component';
+import { BenefitsComponent } from './benefits/benefits.component';
 
 const COMPONENTS: any[] = [
   HeaderComponent,
   ContainerComponent,
   FooterComponent,
-  ProductCardComponent
+  ProductCardComponent,
+  BenefitsComponent
 ];
 
 @NgModule({
